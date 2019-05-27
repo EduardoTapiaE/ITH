@@ -20,7 +20,14 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('cedula0', require('./components/Cedula0.vue').default);
+Vue.component('fileupload', require('./components/FileUpload.vue').default);
+Vue.component('carpeta1', require('./components/Carpeta1.vue').default);
+Vue.component('carpeta2', require('./components/Carpeta2.vue').default);
+Vue.component('carpeta3', require('./components/Carpeta3.vue').default);
+Vue.component('carpeta4', require('./components/Carpeta4.vue').default);
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,5 +36,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        menu : 0
+    }
 });
